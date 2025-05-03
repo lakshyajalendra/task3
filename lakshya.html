@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first portfoliyo</title>
+</head>
+<style>
+      *{
+            margin: 0px;
+        }
+        body{
+            background-color: #fefae0;
+        }
+        #nav{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: bisque;
+        }
+        .icon{
+            position: relative;
+            top: 5px;
+            left: 4%;
+        }
+        .options{
+            position: relative;
+            left: 42%;
+            top: 4px;
+            height: 30px;
+            width: 40%;
+          
+            display: flex;
+            justify-content: space-around;
+        }
+        .button{
+            position: relative;
+            top: 32px;
+            left: 40%;
+            background-color: #ff006e;
+            height: 20px;
+            width: 90px;
+            color: white;
+        }
+        #poster{
+            height: 350px;
+            width: 100%;
+          
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+        .posterdiv1{
+            height:250px;
+            width:21%;
+            /* border: 1px solid black; */
+            position: relative;
+            top: 60px;
+        }
+        /* start poster 2 */
+        #poster2{
+            background-color: #e1d3d3;
+            height: 250px;
+            width: 100%;
+           
+            display: flex;
+            justify-content: space-around;
+        }
+        .poster2div{
+            height:250px;
+            width:400px;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            position: relative;
+            top: 35px;
+        }
+        /* start poster 3 */
+        #poster3{
+            background-color:white;
+            height: 300px;
+            width: 100%;
+         
+        }
+        .l{
+            text-align: center;
+        }
+        #poster3div1{
+            background-color:white;
+            height: 250px;
+            width: 90%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            left: 35px;
+        
+        }
+        .poster3div{
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            background-color: whitesmoke;
+            height: 160px;
+            width: 200px;
+            position: relative;
+            top: 50px;
+            text-align: center;
+        }
+        /* start poster 4 */
+        #poster4{
+            background-color: #e1d3d3;
+            height: 250px;
+            width: 100%;
+          
+            display: flex;
+            justify-content: space-around;
+        }
+        .poster4div{
+            height:200px;
+            width:400px;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            position: relative;
+            top: 35px;
+            right:80px;
+        }
+        .poster4div1{
+            height:200px;
+            width:400px;
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            position: relative;
+            top: 35px;
+            left: 80px;
+            background-image: url("ram.jpg");
+            background-size:cover ;
+        }
+        /* start poster 5 */
+        #poster5{
+            background-color: whitesmoke;
+            height: 500px;
+            width: 100%;
+            position: relative;
+        }
+        .m{
+            text-align: center;
+        }
+        .poster5div{
+            /* border: 1px solid black; */
+            height: 400px;
+            width:720px;
+            position: relative;
+            left: 230px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .poster5div1{
+           
+            background-color: rgba(150, 144, 144, 0.273);
+            border-radius: 5px;
+            height:150px;
+            width: 200px;
+        }
+        .poster5div2{
+            
+            background-color: rgba(150, 144, 144, 0.273);
+            border-radius: 5px;
+            height:150px;
+            width: 200px;
+            position: relative;
+            top: 20px;
+        }
+        /* start poster 6 */
+        #poster6{
+            background-color: #d6d2d2;
+            height: 300px;
+            width: 100%;
+          
+        }
+       .poster6div{
+        background-color: #d6d2d2;
+            height: 250px;
+            width: 90%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            left: 35px;
+       }
+       .poster6div1{
+          
+           border-radius: 5px;
+            background-image: url("download.jpg");
+            background-size: cover;
+            height: 160px;
+            width: 200px;
+            position: relative;
+            top: 50px;
+            text-align: center;
+       }
+       /* start poster 7 */
+       #poster7{
+            background-color: #f1f1f1;
+            height: 500px;
+            width: 100%;
+          
+        }
+        .poster7div{
+           
+            background-color: #e2e2e2;
+            border-radius: 6px;
+            height: 200px;
+            width: 450px;
+            position: relative;
+            left:400px;
+            top: 10px;
+        }
+        /* start poster 8 */
+        #poster8{
+         
+            background-color: rgb(3, 14, 59);
+            height: 500px;
+            width: 100%;
+             position: relative;
+             
+        }
+        .poster8div{
+            background-color: white;
+           
+            height: 400px;
+            width: 600px;
+            position: relative;
+            top: 15px;
+            left: 300px;
+        }
+        .form1{
+            background-color: rgb(175, 165, 165);
+            border: 0px;
+            border-radius: 5px;
+            position: relative;
+            width: 450px;
+            top: 30px;
+            left: 40px;
+        }
+        .form2{
+            background-color: rgb(175, 165, 165);
+            border: 0px;
+            border-radius: 5px;
+            position: relative;
+            width: 450px;
+            height: 100px;
+            top: 30px;
+            left: 40px;
+        }
+        .formbutton{
+            position: relative;
+            top: 30px;
+            left: 40px;
+        }
+        /* start poster 9 */
+        #poster9{
+            background-color: #e1d3d3;
+            height: 350px;
+            width: 100%;
+           
+        }
+        .poster9div{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 1000px;
+            position: relative;
+            top: 15px;
+            left: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .poster9div1{
+            background-image: url("download.jpg");
+            background-size: cover;
+            border-radius: 5px;
+            /* border: 1px solid black; */
+            height:150px;
+            width: 169px;
+            position: relative;
+            top: 50px;
+            left: 88px;
+        }
+        #poster10{
+            background-color: #fffdfd;
+            height: 300px;
+            width: 100%;
+           
+        }
+        .poster10div{
+            background-image: url("download.jpg");
+            border-radius: 5px;
+            height: 250px;
+            width: 400px;
+            position: relative;
+            top: 40px;
+            left: 500px;
+        }
+</style>
+<body>
+    <nav>
+        <div id="nav">
+            <div class="icon">Logoipsum</div>
+            <div class="options">
+                <a>About</a>
+                <a>Our services</a>
+                <a>Portfolio</a>
+                <a>Blog</a>
+                <a>Contact</a>
+            </div>
+            <div class="button">Get In Touch</div>
+        </div>
+    </nav>
+    <!-- poster second div -->
+     <div id="poster">
+        <div class="posterdiv1">
+            <h3 style="color: rgb(180, 16, 16);">\We Are Here\</h3>
+            <h2>Better Insights For <br>Business Growth</h2>
+            <br>
+            <button style="background-color: red;">view more</button>
+        </div>
+        <div class="posterdiv1">
+            <img src="shyam.avif" height="250px" width="255px">
+        </div>
+     </div>
+     <!-- start poster 2 -->
+      <div id="poster2">
+        <div class="poster2div">
+           <img src="ram.jpg" alt="computer" height="200px" width="400px" style="border-radius: 5px;">
+        </div>
+        <div class="poster2div">
+            <h3 style="color: red;">\About us\</h3>
+                <h2>One of the fastest way to<br>Business growth</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quod at est illo ipsa. Cum consequatur eligendi recusandae praesentium esse, facere quibusdam velit perferendis impedit ducimus animi repellat cupiditate exercitationem?</p>
+        </div>
+      </div>
+      <!-- start poster 3 -->
+       <div id="poster3">
+        <h3 style="color: red;" class="l">\planning\</h3>
+        <h2 class="l">Our Process</h2>
+        <div id="poster3div1">
+        <div class="poster3div"><h3>Resarch</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo aliquam dolorem nam quas ea aliquid harum cumque suscipit eaque molestias, atque eum la</p>
+        </div>
+        <div class="poster3div"><h3>Design</h3>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo aliquam dolorem nam quas ea aliquid harum cumque suscipit eaque molestias, atque eum la</p>
+        </div>
+        <div class="poster3div"><h3>Devpolpe</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo aliquam dolorem nam quas ea aliquid harum cumque suscipit eaque molestias, atque eum la</p>
+        </div>
+        <div class="poster3div"><h3>Test</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nemo aliquam dolorem nam quas ea aliquid harum cumque suscipit eaque molestias, atque eum la</p>
+        </div>
+    </div>
+       </div>
+       <!-- start poster 4 -->
+        <div id="poster4">
+            <div class="poster4div1"></div>
+            <div class="poster4div">
+                <h3 style="color: red;">\What we do\</h3>
+                <br>
+                <h2>We develope product that<br>people love to use.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quod at est illo ipsa. Cum consequatur eligendi recusandae praesentium esse, facere quibusdam velit perferendis impedit ducimus animi repellat cupiditate exercitationem?</p>
+                <button style="background-color: #ff006e; color: white;" id="btn3">Send Now</button>
+            </div>
+        </div>
+        <!-- start poster 5 -->
+         <div id="poster5">
+            <h3 style="color: red;" class="m">\Services\</h3>
+            <h2 class="m">Our expertice</h2>
+            <br>
+            <div class="poster5div">
+                <div class="poster5div1">
+                    <h4>web Design/Devlopment</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet,  nobis illum ex, ab pariatur quasi sit a fugit voluptatibus eius ad aperiam repellendus earum quam assumenda.</p>
+                </div>
+                <div class="poster5div1">
+                    <h4>Ul/UX Design</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet,  nobis illum ex, ab pariatur quasi sit a fugit voluptatibus eius ad aperiam repellendus earum quam assumenda.</p>
+                </div>
+                <div class="poster5div1">
+                    <h4>Website Migration</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet,  nobis illum ex, ab pariatur quasi sit a fugit voluptatibus eius ad aperiam repellendus earum quam assumenda.</p>
+                </div>
+                <div class="poster5div2">
+                    <h4>App Development</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet,  nobis illum ex, ab pariatur quasi sit a fugit voluptatibus eius ad aperiam repellendus earum quam assumenda.</p>
+                </div>
+                <div class="poster5div2">
+                    <h4>HubSpot integration</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet,  nobis illum ex, ab pariatur quasi sit a fugit voluptatibus eius ad aperiam repellendus earum quam assumenda.</p>
+                </div>
+                <div class="poster5div2">
+                    <h4>Email marketing</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet,  nobis illum ex, ab pariatur quasi sit a fugit voluptatibus eius ad aperiam repellendus earum quam assumenda.</p>
+                </div>
+            </div>
+         </div>
+         <!-- start poster 6 -->
+         <div id="poster6">
+            <h3 style="color: red; text-align: center;">\team\</h3>
+            <h2 style="text-align: center;">Our leaders</h2>
+            <div class="poster6div">
+                <div class="poster6div1"></div>
+                <div class="poster6div1"></div>
+                <div class="poster6div1"></div>
+                <div class="poster6div1"></div>
+                <div class="poster6div2">
+                    
+                </div>
+            </div>
+         </div>
+         <!-- start poster 7 -->
+          <div id="pster7" style="background-color: #e1d3d3;">
+            <h3 style="color: red; text-align: center;">\From Our Customers\</h3>
+            <h2 style="text-align: center;">Testmonials</h2>
+            <div class="poster7div">
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, obcaecati. Magni, ad ipsum dolor sit amet consectetur, adipisicing elit. Modi, obcaecati. Magni, ad fugipsum dolor sit amet consectetur, adipisicing elit. Modi, obcaecati. Magni, ad fugfuga fugiat optio rerum libero deserunt aliquam sequi hic iusto blanditiis eum tenetur sit saepe repellendus eveniet nobis?</p>
+                <p style="color: red;">SHUBHAS</p>
+            </div>
+          </div>
+          
+          <!-- start poster 8 -->
+            <div id="poster8">
+            <h3 style="color: red; text-align: center;">\get in touch\</h3>
+            <h2 style="text-align: center; color: white;">Hey! Let's Talk</h2>
+            <div class="poster8div">
+                <form>
+                    <input class="form1" text" placeholder="Name">
+                    <br><br>
+                    <input class="form1" type="email" placeholder="email">
+                    <br><br>
+                    <input class="form1" type="tel" placeholder="phone">
+                    <br><br>
+                    <textarea class="form2" placeholder="Your Message" class="f"></textarea>
+                    <br><br>
+                    <button style="background-color: #ff006e; color: white;" id="btn3" class="formbutton">Send Now</button>
+                </form>
+            </div>
+           </div> 
+           <!-- start poster 9 -->
+            <div id="poster9">
+                <h3 style="color: red; text-align: center;">\Our Blog\</h3>
+                <h2 style="text-align: center;">Latest Post</h2>
+                <div class="poster9div">
+                <div class="poster9div1"></div>
+                 <div class="poster9div1"></div>
+                 <div class="poster9div1"></div>
+                </div>
+            </div>
+            <!-- star poster 10 -->
+             <div id="poster10">
+                <div class="poster10div"></div>
+             </div>
+</body>
+</html>
